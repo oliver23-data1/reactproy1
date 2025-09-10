@@ -1,0 +1,674 @@
+@media (max-width: 768px) {
+    footer .row {
+        flex-direction: column !important;
+        align-items: stretch;
+        gap: 40px;
+    }
+    .footer-content {
+        width: 100%;
+        margin-bottom: 0;
+        text-align: left;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+    .footer-content:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 768px) {
+    footer .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+    }
+@media (max-width: 768px) {
+    footer .row {
+        flex-direction: column !important;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    .footer-content {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+}
+    .footer-content {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+}
+:root {
+    --unamad-primary: #d6336c;
+    --unamad-dark: #a61e4d;
+    --unamad-light: #fce4ec;
+    --text-dark: #2d3436;
+    --text-light: #636e72;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f6fa;
+    color: var(--text-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+/* Estilos del header y footer */
+.header-top {
+    background-color: var(--unamad-primary);
+    color: white;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.header-main {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 20px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.university-name h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--unamad-primary);
+    margin: 0;
+}
+
+.university-name p {
+    font-size: 14px;
+    color: var(--text-light);
+    margin: 0;
+}
+
+
+footer {
+    background-color: #2d3436;
+    color: #fff;
+    padding: 50px 0 30px;
+    margin-top: auto;
+}
+
+
+.footer-content h5 {
+    color: #d6336c;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+.footer-content p, .footer-content a {
+    color: #fff;
+    opacity: 0.9;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+    opacity: 0.7;
+    color: #fff;
+}
+
+/* Estilos personalizados para Select2 */
+.select2-container--bootstrap4 .select2-selection--single {
+    height: 48px !important;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #e0e6ed;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.select2-container--bootstrap4 .select2-selection--single .select2-selection__rendered {
+    line-height: 30px;
+    color: #333;
+}
+
+.select2-container--bootstrap4.select2-container--focus .select2-selection--single {
+    border-color: var(--unamad-primary);
+    box-shadow: 0 0 0 0.2rem rgba(214, 51, 108, 0.25);
+    background-color: white;
+}
+
+.select2-dropdown {
+    border: 2px solid #e0e6ed;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.select2-search--dropdown .select2-search__field {
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #e0e6ed;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* Icono de búsqueda */
+.select2-search--dropdown {
+    position: relative;
+    padding: 10px;
+}
+
+.select2-search--dropdown::before {
+    content: "\f002";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 25px;
+    top: 22px;
+    color: #999;
+    pointer-events: none;
+}
+
+.select2-results__option {
+    padding: 12px 20px;
+    font-size: 15px;
+}
+
+.select2-results__option--highlighted {
+    background-color: var(--unamad-primary);
+}
+
+.select2-container {
+    width: 100% !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #d6336c 0%, #a61e4d 100%);
+    color: white;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+}
+
+.hero-content h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* Search Card */
+
+.search-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(214, 51, 108, 0.15);
+    padding: 50px;
+    margin-top: -60px;
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 10;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 600px) {
+    .search-card {
+        padding: 30px 10px;
+        max-width: 95vw;
+    }
+}
+
+.search-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.search-title h3 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.search-title p {
+    color: #636e72;
+    font-size: 16px;
+}
+
+/* Select personalizado */
+.select-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.select-wrapper label {
+    font-weight: 500;
+    color: #2d3436;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.custom-select {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    border: 2px solid #e0e6ed;
+    border-radius: 12px;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    padding-right: 50px;
+}
+
+.custom-select:focus {
+    outline: none;
+    border-color: #d6336c;
+    background-color: white;
+    box-shadow: 0 0 0 4px rgba(214, 51, 108, 0.1);
+}
+
+/* Botón Mostrar */
+.btn-mostrar {
+    background: linear-gradient(135deg, #d6336c 0%, #a61e4d 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 12px;
+    width: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 30px rgba(214, 51, 108, 0.3);
+    cursor: pointer;
+}
+
+.btn-mostrar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(214, 51, 108, 0.4);
+    color: white;
+}
+
+.btn-mostrar i {
+    margin-right: 10px;
+}
+
+/* Results Section */
+.results-section {
+    margin-top: 60px;
+    display: none;
+    min-height: 300px;
+}
+
+/* Results Card - MODIFICADO */
+.results-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+    /* Prevenir el temblor del scrollbar */
+    scrollbar-gutter: stable;
+}
+
+/* Results Header */
+.results-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 30px;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.results-header h4 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.results-stats {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stat-icon {
+    width: 40px;
+    height: 40px;
+    background: #fce4ec;
+    color: #d6336c;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stat-text {
+    flex: 1;
+}
+
+.detail-label {
+    font-size: 12px;
+    color: #636e72;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-value {
+    font-size: 14px;
+    color: #2d3436;
+    font-weight: 500;
+}
+
+/* Barra de búsqueda mejorada */
+.search-bar-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.search-bar-container .form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-bar-container .form-control:focus {
+    border-color: var(--unamad-primary);
+    box-shadow: 0 0 0 0.2rem rgba(214, 51, 108, 0.1);
+}
+
+/* Table Container - MODIFICADO */
+.table-container {
+    overflow-x: auto;
+    margin-top: 0;
+    /* Limitar el ancho y mantener scroll estable */
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling en iOS */
+    scrollbar-gutter: stable both-edges; /* Espacio fijo para scrollbar */
+}
+
+/* Professional Table - MODIFICADO */
+.professional-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Control de tabla */
+    table-layout: fixed; /* Importante: fija el ancho de columnas */
+    min-width: 900px; /* Ancho mínimo para evitar que se comprima demasiado */
+}
+
+/* Ajustar anchos específicos de columnas */
+.professional-table thead th:nth-child(1) { width: 5%; }  /* # */
+.professional-table thead th:nth-child(2) { width: 28%; } /* Nombre */
+.professional-table thead th:nth-child(3) { width: 25%; } /* Cargo */
+.professional-table thead th:nth-child(4) { width: 18%; } /* Teléfono */
+.professional-table thead th:nth-child(5) { width: 24%; } /* Correo */
+
+.professional-table thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.professional-table thead th {
+    padding: 16px 20px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: none;
+    white-space: nowrap;
+}
+
+.professional-table thead th:first-child {
+    text-align: center;
+    width: 60px;
+}
+
+.professional-table tbody tr {
+    border-bottom: 1px solid #e9ecef;
+    transition: all 0.2s ease;
+}
+
+.professional-table tbody tr:hover {
+    background-color: #f8f9fa;
+    transform: translateX(2px);
+}
+
+.professional-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.professional-table tbody tr:nth-child(even):hover {
+    background-color: #f8f9fa;
+}
+
+/* Table Body Cells - MODIFICADO */
+.professional-table tbody td {
+    padding: 16px 20px;
+    font-size: 14px;
+    color: #495057;
+    vertical-align: middle;
+    /* Control de texto largo */
+    max-width: 0; /* Necesario para que funcione con table-layout: fixed */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Permitir wrap solo en correos largos */
+.professional-table tbody td:nth-child(5) { /* Columna de correo */
+    white-space: normal;
+    word-break: break-word;
+}
+
+.professional-table tbody td:first-child {
+    text-align: center;
+    font-weight: 600;
+    color: #6c757d;
+}
+
+/* Enlaces de contacto mejorados */
+.contact-link {
+    color: #3498db;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.contact-link:hover {
+    color: #2471a3;
+    text-decoration: none;
+}
+
+.contact-link i {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+/* Datos no disponibles */
+.no-data {
+    color: #adb5bd;
+    font-style: italic;
+    font-size: 13px;
+}
+
+/* Estilizar el scrollbar para que sea más sutil */
+.table-container::-webkit-scrollbar {
+    height: 8px;
+    background-color: transparent;
+}
+
+.table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+    border-radius: 4px;
+}
+
+.table-container::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+/* No results */
+.no-results {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.no-results i {
+    font-size: 64px;
+    color: #dee2e6;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.no-results h4 {
+    color: #6c757d;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.no-results p {
+    color: #adb5bd;
+    font-size: 16px;
+}
+
+/* Loading */
+#loadingSection {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* Prevenir el temblor global */
+body {
+    overflow-y: scroll; /* Siempre mostrar scrollbar vertical */
+}
+
+/* Media Queries - Responsive */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 32px;
+    }
+    
+    .hero-content p {
+        font-size: 18px;
+    }
+    
+    .search-card {
+        padding: 30px 20px;
+    }
+    
+    .results-stats {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .professional-table {
+        font-size: 12px;
+        min-width: 700px; /* Reducir ancho mínimo en móvil */
+    }
+    
+    .professional-table thead th,
+    .professional-table tbody td {
+        padding: 12px 10px;
+    }
+    
+    .professional-table thead th {
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    
+    .contact-link {
+        font-size: 12px;
+    }
+    
+    /* Ajustar anchos de columnas en móvil */
+    .professional-table thead th:nth-child(1) { width: 8%; }
+    .professional-table thead th:nth-child(2) { width: 25%; }
+    .professional-table thead th:nth-child(3) { width: 22%; }
+    .professional-table thead th:nth-child(4) { width: 20%; }
+    .professional-table thead th:nth-child(5) { width: 25%; }
+}
+
+/* Para pantallas grandes */
+@media (min-width: 1200px) {
+    .table-container {
+        overflow-x: hidden; /* Ocultar scroll en pantallas grandes */
+    }
+    
+    .professional-table {
+        min-width: 100%; /* Usar todo el ancho disponible */
+    }
+}
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1199px) {
+    .professional-table {
+        min-width: 850px;
+    }
+}
