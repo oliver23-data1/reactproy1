@@ -4,6 +4,11 @@ import ExamView from './ExamView';
 
 const ExamSystem = ({ courses }) => {
   const { courseId, examId } = useParams();
+
+  if (!Array.isArray(courses) || courses.length === 0) {
+    return <div>Loading exam...</div>;
+  }
+
   const navigate = useNavigate();
   const [progress, setProgress] = useState(0);
   const [timeLeft, setTimeLeft] = useState(900); // 15 minutes in seconds

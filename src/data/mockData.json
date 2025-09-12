@@ -1,0 +1,377 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Matemáticas Avanzadas",
+      "description": "Curso de matemáticas de nivel superior",
+      "image": "https://placehold.co/600x400/2563eb/ffffff?text=Matemáticas",
+      "exams": [
+        {
+          "id": 101,
+          "title": "Examen Parcial 1",
+          "duration": 1800,
+          "questions": [
+            {
+              "id": 1001,
+              "question": "¿Cuál es la derivada de x²?",
+              "options": [
+                "2x",
+                "x",
+                "x³",
+                "1"
+              ],
+              "correctAnswer": "2x"
+            },
+            {
+              "id": 1002,
+              "question": "¿Cuál es la integral de 2x?",
+              "options": [
+                "x² + C",
+                "2x² + C",
+                "ln|x| + C",
+                "No se puede determinar"
+              ],
+              "correctAnswer": "x² + C",
+              "explanation": "La integral de 2x es x² + C, donde C es la constante de integración."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Física Cuántica",
+      "description": "Introducción a la física cuántica",
+      "image": "https://placehold.co/600x400/dc2626/ffffff?text=Física",
+      "exams": [
+        {
+          "id": 201,
+          "title": "Conceptos Básicos",
+          "duration": 1800,
+          "questions": [
+            {
+              "id": 2001,
+              "question": "¿Qué es el principio de incertidumbre de Heisenberg?",
+              "options": [
+                "No se puede medir simultáneamente la posición y el momento con precisión arbitraria",
+                "Las partículas siempre tienen una posición definida",
+                "La energía se conserva siempre",
+                "La velocidad de la luz es constante"
+              ],
+              "correctAnswer": "No se puede medir simultáneamente la posición y el momento con precisión arbitraria",
+              "explanation": "El principio establece un límite fundamental en la precisión con la que se pueden medir ciertas parejas de magnitudes físicas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Programación en Python",
+      "description": "Curso básico de programación con Python",
+      "image": "https://placehold.co/600x400/16a34a/ffffff?text=Python",
+      "exams": [
+        {
+          "id": 301,
+          "title": "Fundamentos de Python",
+          "duration": 1800,
+          "questions": [
+            {
+              "id": 3001,
+              "question": "¿Qué es una lista en Python?",
+              "options": [
+                "Una colección ordenada y mutable de elementos",
+                "Un número entero",
+                "Una función",
+                "Un tipo de dato inmutable"
+              ],
+              "correctAnswer": "Una colección ordenada y mutable de elementos",
+              "explanation": "Las listas en Python son estructuras de datos que pueden contener múltiples elementos de diferentes tipos.",
+              "correctAnswerId": 1
+            },
+            {
+              "id": 3002,
+              "question": "¿Cómo se define una función en Python?",
+              "options": [
+                "def nombre_funcion():",
+                "function nombre_funcion():",
+                "void nombre_funcion()",
+                "int nombre_funcion()"
+              ],
+              "correctAnswer": "def nombre_funcion():",
+              "explanation": "En Python, las funciones se definen usando la palabra clave \"def\".",
+              "correctAnswerId": 1
+            },
+            {
+              "id": 3003,
+              "question": "¿Qué hace la función `print()` en Python?",
+              "options": [
+                "Imprime texto en la consola",
+                "Lee la entrada del usuario",
+                "Define una variable",
+                "Realiza cálculos matemáticos"
+              ],
+              "correctAnswer": "Imprime texto en la consola",
+              "explanation": "La función `print()` se utiliza para mostrar información en la consola.",
+              "correctAnswerId": 1
+            },
+            {
+              "id": 3004,
+              "question": "¿Qué es una variable en Python?",
+              "options": [
+                "Un valor que puede cambiar durante la ejecución del programa",
+                "Una función",
+                "Un tipo de dato inmutable",
+                "Una estructura de control"
+              ],
+              "correctAnswer": "Un valor que puede cambiar durante la ejecución del programa",
+              "explanation": "Las variables almacenan valores que pueden ser modificados.",
+              "correctAnswerId": 1
+            },
+            {
+              "id": 3005,
+              "question": "¿Cuál es la sintaxis correcta para un bucle `for` en Python?",
+              "options": [
+                "for i in range(5):",
+                "for i = 0; i < 5; i++",
+                "loop i = 0 to 5",
+                "for (i = 0; i < 5; i++)"
+              ],
+              "correctAnswer": "for i in range(5):",
+              "explanation": "La sintaxis correcta para un bucle `for` en Python es `for i in range(n):`.",
+              "correctAnswerId": 1
+            },
+            {
+              "id": 3006,
+              "question": "¿Qué es una tupla en Python?",
+              "options": [
+                "Una colección ordenada e inmutable de elementos",
+                "Una lista mutable",
+                "Un diccionario",
+                "Un conjunto"
+              ],
+              "correctAnswer": "Una colección ordenada e inmutable de elementos",
+              "explanation": "Las tuplas son similares a las listas, pero son inmutables.",
+              "correctAnswerId": 1
+            },
+            {
+              "id": 3007,
+              "question": "¿Cómo se comenta una línea en Python?",
+              "options": [
+                "// Comentario",
+                "/* Comentario */",
+                "# Comentario",
+                "-- Comentario"
+              ],
+              "correctAnswer": "# Comentario",
+              "explanation": "En Python, se utiliza el símbolo # para comentar una línea.",
+              "correctAnswerId": 1
+            },
+            {
+              "id": 3008,
+              "question": "¿Qué es un diccionario en Python?",
+              "options": [
+                "Una colección de pares clave-valor",
+                "Una lista ordenada",
+                "Un conjunto de elementos únicos",
+                "Una tupla"
+              ],
+              "correctAnswer": "Una colección de pares clave-valor",
+              "explanation": "Los diccionarios almacenan datos en pares clave-valor.",
+              "correctAnswerId": 1
+            },
+            {
+              "id": 3009,
+              "question": "¿Cómo se abre un archivo en Python?",
+              "options": [
+                "open(\"archivo.txt\", \"r\")",
+                "read(\"archivo.txt\")",
+                "file(\"archivo.txt\")",
+                "load(\"archivo.txt\")"
+              ],
+              "correctAnswer": "open(\"archivo.txt\", \"r\")",
+              "explanation": "La función `open()` se utiliza para abrir archivos.",
+              "correctAnswerId": 1
+            },
+            {
+              "id": 3010,
+              "question": "¿Qué hace la palabra clave `import` en Python?",
+              "options": [
+                "Importa módulos",
+                "Define una función",
+                "Crea una variable",
+                "Imprime texto en la consola"
+              ],
+              "correctAnswer": "Importa módulos",
+              "explanation": "La palabra clave `import` se utiliza para importar módulos.",
+              "correctAnswerId": 1
+            }
+          ],
+          "modules": [
+            {
+              "id": 3011,
+              "title": "Introducción a Python",
+              "content": "contenido_introduccion.pdf",
+              "completed": false
+            },
+            {
+              "id": 3012,
+              "title": "Variables y Tipos de Datos",
+              "content": "contenido_variables.pdf",
+              "completed": false
+            },
+            {
+              "id": 3013,
+              "title": "Estructuras de Control",
+              "content": "contenido_control.pdf",
+              "completed": false
+            },
+            {
+              "id": 3014,
+              "title": "Funciones",
+              "content": "contenido_funciones.pdf",
+              "completed": false
+            }
+          ],
+          "practiceExam": {
+            "id": 302,
+            "title": "Examen de Práctica",
+            "duration": 1800,
+            "questions": [
+              {
+                "id": 3021,
+                "question": "¿Qué es una lista en Python?",
+                "options": [
+                  "Una colección ordenada y mutable de elementos",
+                  "Un número entero",
+                  "Una función",
+                  "Un tipo de dato inmutable"
+                ],
+                "correctAnswer": "Una colección ordenada y mutable de elementos",
+                "explanation": "Las listas en Python son estructuras de datos que pueden contener múltiples elementos de diferentes tipos.",
+                "correctAnswerId": 1
+              },
+              {
+                "id": 3022,
+                "question": "¿Cómo se define una función en Python?",
+                "options": [
+                  "def nombre_funcion():",
+                  "function nombre_funcion():",
+                  "void nombre_funcion()",
+                  "int nombre_funcion()"
+                ],
+                "correctAnswer": "def nombre_funcion():",
+                "explanation": "En Python, las funciones se definen usando la palabra clave \"def\".",
+                "correctAnswerId": 1
+              },
+              {
+                "id": 3023,
+                "question": "¿Qué hace la función `print()` en Python?",
+                "options": [
+                  "Imprime texto en la consola",
+                  "Lee la entrada del usuario",
+                  "Define una variable",
+                  "Realiza cálculos matemáticos"
+                ],
+                "correctAnswer": "Imprime texto en la consola",
+                "explanation": "La función `print()` se utiliza para mostrar información en la consola.",
+                "correctAnswerId": 1
+              },
+              {
+                "id": 3024,
+                "question": "¿Qué es una variable en Python?",
+                "options": [
+                  "Un valor que puede cambiar durante la ejecución del programa",
+                  "Una función",
+                  "Un tipo de dato inmutable",
+                  "Una estructura de control"
+                ],
+                "correctAnswer": "Un valor que puede cambiar durante la ejecución del programa",
+                "explanation": "Las variables almacenan valores que pueden ser modificados.",
+                "correctAnswerId": 1
+              },
+              {
+                "id": 3025,
+                "question": "¿Cuál es la sintaxis correcta para un bucle `for` en Python?",
+                "options": [
+                  "for i in range(5):",
+                  "for i = 0; i < 5; i++",
+                  "loop i = 0 to 5",
+                  "for (i = 0; i < 5; i++)"
+                ],
+                "correctAnswer": "for i in range(5):",
+                "explanation": "La sintaxis correcta para un bucle `for` en Python es `for i in range(n):`.",
+                "correctAnswerId": 1
+              },
+              {
+                "id": 3026,
+                "question": "¿Qué es una tupla en Python?",
+                "options": [
+                  "Una colección ordenada e inmutable de elementos",
+                  "Una lista mutable",
+                  "Un diccionario",
+                  "Un conjunto"
+                ],
+                "correctAnswer": "Una colección ordenada e inmutable de elementos",
+                "explanation": "Las tuplas son similares a las listas, pero son inmutables.",
+                "correctAnswerId": 1
+              },
+              {
+                "id": 3027,
+                "question": "¿Cómo se comenta una línea en Python?",
+                "options": [
+                  "// Comentario",
+                  "/* Comentario */",
+                  "# Comentario",
+                  "-- Comentario"
+                ],
+                "correctAnswer": "# Comentario",
+                "explanation": "En Python, se utiliza el símbolo # para comentar una línea.",
+                "correctAnswerId": 1
+              },
+              {
+                "id": 3028,
+                "question": "¿Qué es un diccionario en Python?",
+                "options": [
+                  "Una colección de pares clave-valor",
+                  "Una lista ordenada",
+                  "Un conjunto de elementos únicos",
+                  "Una tupla"
+                ],
+                "correctAnswer": "Una colección de pares clave-valor",
+                "explanation": "Los diccionarios almacenan datos en pares clave-valor.",
+                "correctAnswerId": 1
+              },
+              {
+                "id": 3029,
+                "question": "¿Cómo se abre un archivo en Python?",
+                "options": [
+                  "open(\"archivo.txt\", \"r\")",
+                  "read(\"archivo.txt\")",
+                  "file(\"archivo.txt\")",
+                  "load(\"archivo.txt\")"
+                ],
+                "correctAnswer": "open(\"archivo.txt\", \"r\")",
+                "explanation": "La función `open()` se utiliza para abrir archivos.",
+                "correctAnswerId": 1
+              },
+              {
+                "id": 3030,
+                "question": "¿Qué hace la palabra clave `import` en Python?",
+                "options": [
+                  "Importa módulos",
+                  "Define una función",
+                  "Crea una variable",
+                  "Imprime texto en la consola"
+                ],
+                "correctAnswer": "Importa módulos",
+                "explanation": "La palabra clave `import` se utiliza para importar módulos.",
+                "correctAnswerId": 1
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

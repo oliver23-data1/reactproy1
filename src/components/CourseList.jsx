@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const CourseList = ({ courses }) => {
+  console.log('Prop courses en CourseList:', courses);
+
+  if (!Array.isArray(courses) || courses.length === 0) {
+    return <div>Loading courses...</div>;
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-500 to-purple-600 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">

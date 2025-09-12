@@ -1,19 +1,28 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import CourseList from './components/CourseList';
-import CourseDetail from './components/CourseDetail';
-import ExamSystem from './components/ExamSystem';
-import { courses } from './data/mockData';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './routes';
+import { useState, useEffect } from 'react';
 
 function App() {
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+    async function fetchCourses() {
+      try {
+        const response = await fetch('http://localhost:3001/courses');
+        const data = await response.json();
+        console.log('Datos obtenidos:', data);
+        setCourses(data);
+      } catch (error) {
+        console.error('Error fetching courses:', error);
+      }
+    }
+    fetchCourses();
+  }, []);
+
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<CourseList courses={courses} />} />
-        <Route path="/courses/:courseId" element={<CourseDetail courses={courses} />} />
-        <Route path="/courses/:courseId/exams/:examId" element={<ExamSystem courses={courses} />} />
-        <Route path="*" element={<Navigate to="/" replace />} />
-      </Routes>
+      <AppRoutes courses={courses} />
     </Router>
   );
 }
