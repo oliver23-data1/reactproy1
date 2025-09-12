@@ -41,10 +41,10 @@ const CourseDetail = ({ courses }) => {
   console.log('Prop courses en CourseDetail:', courses);
 
   if (!Array.isArray(courses) || courses.length === 0) {
-    return <div>Loading course details...</div>;
+    return <div>Cargando detalles del curso...</div>;
   }
 
-  const course = courses.find(c => c.id === parseInt(courseId));
+  const course = courses.find(c => c.id === courseId);
 
   if (!course) {
     return (
@@ -76,22 +76,26 @@ const CourseDetail = ({ courses }) => {
                   <>
                     <div className="space-y-6">
                       <h2 className="text-2xl font-semibold text-gray-900">Exámenes Disponibles</h2>
-                      {course.exams.map((exam) => (
-                        <Link
-                          key={exam.id}
-                          to={`/courses/${course.id}/exams/${exam.id}`}
-                          className="block bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors"
-                        >
-                          <div className="flex justify-between items-center">
-                            <h3 className="text-xl font-medium text-gray-900">{exam.title}</h3>
-                            <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
-                              Comenzar →
-                            </span>
-                          </div>
-                          <p className="text-gray-600 mt-2">
-                            Duración: {Math.floor(exam.duration / 60)} minutos
-                          </p>
-                        </Link>
+                      {course.exams && course.exams.map((exam, index) => (
+                        exam?.id ? (
+                          <Link
+                            key={exam.id}
+                            to={`/courses/${course.id}/exams/${exam.id}`}
+                            className="block bg-gray-50 rounded-lg p-6 hover:bg-gray-100 transition-colors"
+                          >
+                            <div className="flex justify-between items-center">
+                              <h3 className="text-xl font-medium text-gray-900">{exam.title}</h3>
+                              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-indigo-100 text-indigo-800">
+                                Comenzar →
+                              </span>
+                            </div>
+                            <p className="text-gray-600 mt-2">
+                              Duración: {Math.floor(exam.duration / 60)} minutos
+                            </p>
+                          </Link>
+                        ) : (
+                          <div key={index} className="text-red-500">Examen sin ID válido</div>
+                        )
                       ))}
                     </div>
 

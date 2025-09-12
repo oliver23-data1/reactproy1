@@ -7,6 +7,8 @@ import ExamView from './components/ExamView';
 import ModuleContent from './components/ModuleContent';
 
 const AppRoutes = ({ courses }) => {
+  console.log('Prop courses en AppRoutes:', courses);
+
   return (
     <Routes>
       <Route path="/" element={<CourseList courses={courses} />} />
